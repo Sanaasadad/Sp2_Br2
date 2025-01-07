@@ -4,10 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    cursor: url('path-to-image.png'), auto;
-}
-
 header {
     background-color: #2dcc70;
     display: flex;
@@ -21,7 +17,7 @@ img {
 }
 
 .nav {
-    width: 400px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
