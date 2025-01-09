@@ -10,6 +10,10 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 3px 5px rgb(94, 94, 94);
 }
 
 img {
@@ -36,7 +40,7 @@ img {
 }
 
 #home {
-    box-shadow: 0px 6px 5px rgb(94, 94, 94) inset;
+    box-shadow: 0px 3px 5px rgb(94, 94, 94) inset;
     padding-top: 120px;
     padding-bottom: 70px;
     color: white;
