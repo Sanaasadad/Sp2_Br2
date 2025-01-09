@@ -1,6 +1,5 @@
 body {
     background-color: #7f7f7f;
-    background: linear-gradient(45deg, rgb(193, 193, 193), rgb(67, 67, 67));
 }
 
 details {
@@ -14,7 +13,6 @@ details {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background: transparent;
 }
 
 summary {
@@ -39,7 +37,6 @@ summary {
 summary:hover {
     color: white;
     background-color: #000000;
-    transition: 0.3s;
 }
 
 details[open] summary {
