@@ -3,7 +3,6 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
     background-color: #2dcc70;
     display: flex;
@@ -29,6 +28,8 @@ img {
     border: none;
     font-size: 20px;
     color: white;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
 .nav button:hover{
@@ -65,6 +66,8 @@ h1 {
     height: 40px;
     border: none;
     color: white;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 #home button:hover {

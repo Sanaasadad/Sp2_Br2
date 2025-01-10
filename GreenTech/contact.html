@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/contact.css">
   <link rel="stylesheet" href="styles/home.css">
+  <script defer src="formValidation.js"></script>
   <title>Contact</title>
 </head>
 <body>
@@ -21,14 +22,15 @@
         </nav>
     </header>
     <main class="main">
-        <form>
-            <input type="text" id="name" name="name" placeholder="name">
+        <form id="form">
+            <div id="error"></div>
+            <input id="name" placeholder="name">
+
+            <input id="email" placeholder="Email">
         
-            <input id="email" name="email" type="text" placeholder="Email">
+            <input id="subject" placeholder="Message Subject">
         
-            <input type="text" name="subject" id="subject" placeholder="Message Subject">
-        
-            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <textarea  id="message" placeholder="Message"></textarea>
         
             <button id="sub" type="submit">Submit</button>
         </form>
