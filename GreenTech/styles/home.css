@@ -9,6 +9,10 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 3px 5px rgb(94, 94, 94);
 }
 
 img {
@@ -29,7 +33,10 @@ img {
     font-size: 20px;
     color: white;
     cursor: pointer;
+<<<<<<< HEAD
     transition: 0.4s;
+=======
+>>>>>>> f0a3c8f67f5117f344639228bb90b1667ee0bff3
 }
 
 .nav button:hover{
@@ -37,11 +44,11 @@ img {
 }
 
 #home {
-    box-shadow: 0px 6px 5px rgb(94, 94, 94) inset;
+    box-shadow: 0px 3px 5px rgb(94, 94, 94) inset;
     padding-top: 120px;
     padding-bottom: 70px;
     color: white;
-    background-color: #7f7f7f;
+    background: linear-gradient(45deg, rgb(193, 193, 193), rgb(67, 67, 67));
 }
 
 h1 {
@@ -66,13 +73,19 @@ h1 {
     height: 40px;
     border: none;
     color: white;
+<<<<<<< HEAD
     transition: 0.4s;
+=======
+    transition: 0.3s;
+>>>>>>> f0a3c8f67f5117f344639228bb90b1667ee0bff3
     cursor: pointer;
 }
 
 #home button:hover {
     color: rgb(0, 0, 0);
     background-color: white;
+    box-shadow: 0px 2px 16px rgb(110, 110, 110);
+    transform: translateY(-2px);
 }
 
 #services {
@@ -86,6 +99,7 @@ h1 {
 }
 
 #services h2{
+    font-size: 40px;
     margin-bottom: 40px;
     color: #27ae61;
 }
@@ -97,23 +111,32 @@ h1 {
     width: 100%;
 }
 
+.B img {
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 16px rgb(110, 110, 110);
+}
+
 .B {
     background-color: rgb(255, 255, 255);
     text-align: center;
     width: 250px;
-    height: 190px;
-    border: 1px solid;
+    height: 245px;
     border-radius: 5px;
     box-shadow: 0px 8px 16px rgb(110, 110, 110);
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    transition: 0.3s;
+    gap: 20px;
 }
 .B p {
     margin-bottom: 25px;
 }
 .B:hover {
-    box-shadow: 0px 2px 30px #2dcc70;
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
 }
 
 #b2 {
@@ -142,6 +165,7 @@ h1 {
 }
 
 #contact h2{
+    font-size: 40px;
     color: #27ae61;
 }
 
@@ -153,10 +177,14 @@ h1 {
     height: 40px;
     border: none;
     color: white;
+    transition: 0.3s;
+    cursor: pointer;
 }
 #contact button:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 16px rgb(110, 110, 110);
 }
 
 footer {

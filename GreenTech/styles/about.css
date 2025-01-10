@@ -1,0 +1,122 @@
+.haut{
+    background-image: url(../assets/images/sss.jpg);
+    background-color: rgb(147, 147, 147);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   height: 200px;
+      
+}
+
+.titre1{
+    background-color: rgb(255, 255, 255);
+    color: green;
+ text-align: center;
+ font-size: 30px;
+ width: 100%;
+ padding-top: 40px;
+ display: flex;
+ flex-direction: column;
+ 
+ 
+ 
+ 
+}
+
+.box1{
+    width: 20%;
+    height: 150px;
+    background-color: rgb(60, 165, 60);
+    color: aliceblue;
+    border-radius: 8%;
+       
+}
+.box2{
+    width: 20%;
+    height: 150px;
+    background-color: rgb(60, 165, 60);
+    color: aliceblue;
+    border-radius: 8%;
+
+
+}
+.S{
+    width: 20%;
+height: 150px;
+background-color: gray;
+color: black;
+display: flex;
+flex-direction: column;
+align-self: center;
+border-radius: 8%;
+
+}
+.boxes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  
+}
+.text{
+    
+   display: flex;
+   align-items: center;
+   padding-bottom: 40px;
+   margin-top: 10px;
+    
+}
+.bas{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+#titre2{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#valeur{
+    color: rgb(23, 21, 21);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    
+}
+.Nom{
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+margin-top: 20px;
+margin-bottom: 10px;
+
+}
+.Role{
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+display: flex;
+justify-content: center;
+margin-top: 10px;
+margin-bottom: 200px;
+
+}
+
+.box{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-self: center;
+}
+    

@@ -64,7 +64,11 @@ textarea{
 }
 #sub{
   color: white;
+<<<<<<< HEAD
   font-family: sans-serif;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> f0a3c8f67f5117f344639228bb90b1667ee0bff3
   font-size: 18px;
   border: solid rgb(255, 255, 255) 2px;
   background-color: #2dcc70;
