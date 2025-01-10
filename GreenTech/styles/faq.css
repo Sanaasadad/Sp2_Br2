@@ -2,6 +2,14 @@ body {
     background: linear-gradient(45deg, rgb(193, 193, 193), rgb(67, 67, 67));
 }
 
+#headline {
+    margin-top: 40px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: #6e6e6e;
+    color: white;
+}   
+
 details {
     background: transparent;
     margin-top: 60px;
