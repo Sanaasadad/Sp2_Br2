@@ -4,26 +4,11 @@ const email = document.getElementById('email');
 const subject = document.getElementById('subject');
 const userMessage = document.getElementById('message');
 const errorMessage = document.getElementById('error');
-const input = document.querySelector('input');
+const validMessage = document.getElementById('valid');
 
-submit.addEventListener("click", (e) => {
-    e.preventDefault(); 
-
+submit.addEventListener("click", () => {
     let message = [];  
     let result = 0;    
-
-    Name.addEventListener('input', () => {
-        Name.style.borderStyle = 'solid';
-        Name.style.borderWidth = '1px';
-        Name.style.borderColor = 'white'; 
-        
-        if (Name.value === "") {
-            Name.style.borderColor = 'red';
-            message.push("Enter your name");
-        } else if (Name.value.length < 3) {
-            Name.style.borderColor = 'red';
-        }
-    });
 
     if (Name.value === "") {
         message.push("Enter your name");
@@ -36,7 +21,11 @@ submit.addEventListener("click", (e) => {
     }
 
     const emailValid = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailValid.test(email.value)) {
+    if(email.value === ""){
+        message.push("Enter your Email");
+        email.style.borderColor = 'red';
+        result++;
+    }else if (!emailValid.test(email.value)) {
         message.push("Email is not valid");
         email.style.borderColor = 'red';
         result++;
@@ -46,23 +35,31 @@ submit.addEventListener("click", (e) => {
         message.push("Enter a subject");
         subject.style.borderColor = 'red';
         result++;
+    }else if(subject.value.length < 5){
+        message.push("Subject is too short");
+        subject.style.borderColor = 'red';
+        result++;
     }
 
     if (userMessage.value === "") {
         message.push("Enter your message");
         userMessage.style.borderColor = 'red';
         result++;
+    }else if(userMessage.value.length < 10){
+        message.push("Message is too short");
+        subject.style.borderColor = 'red';
+        result++;
     }
 
     if (result > 0) {
         errorMessage.innerText = message.join(', ');
     } else {
-        // Name.style.borderColor = 'white';
-        // email.style.borderColor = 'white';
-        // subject.style.borderColor = 'white';
-        // userMessage.style.borderColor = 'white';
-        input.style.borderColor = "white";
+        Name.style.borderColor = 'white';
+        email.style.borderColor = 'white';
+        subject.style.borderColor = 'white';
+        userMessage.style.borderColor = 'white';
 
-        errorMessage.innerText = "Form submitted successfully!";
+        validMessage.innerText = "Form submitted successfully!";
+        errorMessage.innerText = "";
     }
 });
